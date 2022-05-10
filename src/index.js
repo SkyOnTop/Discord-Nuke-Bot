@@ -9,32 +9,19 @@ const { token, prefix, userID, disableEveryone } = require("../config/config.jso
 
 nuker.on("ready", () => {
     console.clear();
-    console.log(red(`
-    
-                                                   
-    ██▓███   ██▀███  ▓█████   ██████   ██████ ▓█████  ██▀███  
-    ▓██░  ██▒▓██ ▒ ██▒▓█   ▀ ▒██    ▒ ▒██    ▒ ▓█   ▀ ▓██ ▒ ██▒
-    ▓██░ ██▓▒▓██ ░▄█ ▒▒███   ░ ▓██▄   ░ ▓██▄   ▒███   ▓██ ░▄█ ▒
-    ▒██▄█▓▒ ▒▒██▀▀█▄  ▒▓█  ▄   ▒   ██▒  ▒   ██▒▒▓█  ▄ ▒██▀▀█▄  
-    ▒██▒ ░  ░░██▓ ▒██▒░▒████▒▒██████▒▒▒██████▒▒░▒████▒░██▓ ▒██▒
-    ▒▓▒░ ░  ░░ ▒▓ ░▒▓░░░ ▒░ ░▒ ▒▓▒ ▒ ░▒ ▒▓▒ ▒ ░░░ ▒░ ░░ ▒▓ ░▒▓░
-    ░▒ ░       ░▒ ░ ▒░ ░ ░  ░░ ░▒  ░ ░░ ░▒  ░ ░ ░ ░  ░  ░▒ ░ ▒░
-    ░░         ░░   ░    ░   ░  ░  ░  ░  ░  ░     ░     ░░   ░ 
-    ░        ░  ░      ░        ░     ░  ░   ░     
-                                            
-                                                      
+    console.log(red(`                           
                             Beta
                     Nuker: ${nuker.user.tag}
                     Prefix: ${prefix}
     `))
-    nuker.user.setActivity({ name: "Presser Beta", type: "PLAYING" });
+    nuker.user.setActivity({ name: "$ky", type: "PLAYING" });
 });
 
 nuker.on("messageCreate", (message) => {
 
     // Help Embed
     const help = new MessageEmbed()
-        .setDescription(`**Presser Beta ;**
+        .setDescription(`**$ky ;**
     \n**mass channels ;**
     ${prefix}mc [amount] (text) i.e \`${prefix}mc 5 test\`\n
     **mass channel n ping ;**
@@ -54,7 +41,7 @@ nuker.on("messageCreate", (message) => {
     **mass ban ;**
     ${prefix}mb
     `)
-        .setFooter(`© Presser Beta`)
+        .setFooter(`© $ky`)
         .setColor(0x36393E)
         .setTimestamp(Date.now());
 
