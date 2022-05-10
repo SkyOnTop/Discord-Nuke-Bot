@@ -1,7 +1,3 @@
-/**
- * Presser Beta
- * @author 7teen
- */
 const { Client, Intents, MessageEmbed } = require("discord.js");
 const nuker = new Client({ intents: Object.values(Intents.FLAGS).reduce((a, b) => a + b) });
 const { red, greenBright, cyan, yellow } = require("chalk");
